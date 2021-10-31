@@ -1,0 +1,324 @@
+body{
+    background-image: url('../img/fondo-home-smart.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.profile-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 150px auto 50px;
+    letter-spacing: 8px;
+    line-height: 1.3;
+}
+
+.profile-details{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.3;
+    min-width: 200px;
+    margin: 25px auto 5px;
+}
+
+.under{
+    width: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.underline-left{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: 600px;
+    animation: move-left 15s infinite;
+}
+
+.underline-left li{
+    list-style: none;
+    width: 100%;
+}
+
+.underline-right{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: 600px;
+    animation: move-rigth 15s infinite;
+}
+
+.underline-right li{
+    list-style: none;
+    width: 100%;
+}
+
+.line{
+    display: block;
+    background-color: #fefefe;
+    width: 200px;
+    height: 2px;
+    margin-bottom: 5px;
+}
+
+.none-sup{
+    background-color: transparent;
+}
+
+@keyframes move-left{
+    0% { margin-left: 0;}
+    13%{ margin-left: 0px;}
+
+    20%{margin-left: -160px;}
+    53%{margin-left: -160px;}
+    
+    60%{margin-left: -240px;}
+    93%{margin-left: -240px;}
+
+    100%{margin-left: -400px;}
+}
+
+@keyframes move-rigth{
+    0% { margin-left: -400px;}
+    13%{ margin-left: -400px;}
+
+    20%{margin-left: -240px;}
+    53%{margin-left: -240px;}
+    
+    60%{margin-left: -160px;}
+    93%{margin-left: -160px;}
+   
+    100%{margin-left: 0px;}
+}
+
+@media (max-width: 450px){
+    .profile-title{
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 769px){
+    body{
+        background-image: url('../img/fondo-home.jpg');
+    }
+
+    .profile{
+        text-align: left;
+        justify-content: space-between;
+        max-width: 668px;
+        padding-top: 50px;
+        margin: 50px auto;
+    }
+
+    .profile-title{
+        font-size: 60px;
+        font-weight: bold;
+        margin: 0;
+        color: white;
+    }
+
+    .profile-details{
+        font-size: 30px;
+        margin: 25px 0px 5px;
+    }
+
+    .under{
+        width: 240px;
+        margin: 0px;
+    }
+    
+    .underline-left{
+        width: 720px;
+    }
+    
+    .underline-right{
+        width: 720px;
+    }
+    
+    .line{
+        width: 240px;
+        height: 3px;
+        margin-bottom: 8px;
+    }
+        
+    @keyframes move-left{
+        0% { margin-left: 0;}
+        13%{ margin-left: 0px;}
+    
+        20%{margin-left: -200px;}
+        53%{margin-left: -200px;}
+        
+        60%{margin-left: -270px;}
+        93%{margin-left: -270px;}
+    
+        100%{margin-left: -480px;}
+    }
+    
+    @keyframes move-rigth{
+        0% { margin-left: -500px;}
+        13%{ margin-left: -500px;}
+    
+        20%{margin-left: -280px;}
+        53%{margin-left: -280px;}
+        
+        60%{margin-left: -210px;}
+        93%{margin-left: -210px;}
+       
+        100%{margin-left: 0px;}
+    }
+}
+
+@media (min-width: 900px){
+    .profile{
+        max-width: 800px;
+        margin: 100px auto;
+        padding-left: 50px;
+    }
+
+    .profile-title{
+        font-size: 65px;
+    }
+    
+    .profile-details{
+        font-size: 30px;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .profile{
+        max-width: 1100px;
+        margin: 100px auto;
+    }
+
+    .profile-title{
+        font-size: 80px;
+    }
+
+    .profile-details{
+        font-size: 40px;
+    }
+
+    .under{
+        width: 320px;
+    }
+    
+    .underline-left{
+        width: 960px;
+    }
+    
+    .underline-right{
+        width: 960px;
+    }
+    
+    .line{
+        width: 320px;
+        margin-bottom: 10px;
+    }
+        
+    @keyframes move-left{
+        0% { margin-left: 0;}
+        13%{ margin-left: 0px;}
+    
+        20%{margin-left: -280px;}
+        53%{margin-left: -280px;}
+        
+        60%{margin-left: -360px;}
+        93%{margin-left: -360px;}
+    
+        100%{margin-left: -640px;}
+    }
+    
+    @keyframes move-rigth{
+        0% { margin-left: -640px;}
+        13%{ margin-left: -640px;}
+    
+        20%{margin-left: -360px;}
+        53%{margin-left: -360px;}
+        
+        60%{margin-left: -280px;}
+        93%{margin-left: -280px;}
+       
+        100%{margin-left: 0px;}
+    }
+    
+}
+
+@media (min-width: 1440px){    
+    .page-top{
+        width: 100%;
+        height: calc(100vh - 183px);
+    }
+
+    .profile{
+        max-width: 1340px;
+        margin: 100px auto;
+    }
+
+    .profile-title{
+        font-size: 120px;
+    }
+
+    .profile-details{
+        font-size: 60px;
+    }
+    
+    .under{
+        width: 480px;
+    }
+    
+    .underline-left{
+        width: 1440px;
+    }
+    
+    .underline-right{
+        width: 1440px;
+    }
+    
+    .line{
+        width: 480px;
+        margin-bottom: 12px;
+    }
+        
+    @keyframes move-left{
+        0% { margin-left: 0;}
+        13%{ margin-left: 0px;}
+    
+        20%{margin-left: -420px;}
+        53%{margin-left: -420px;}
+        
+        60%{margin-left: -540px;}
+        93%{margin-left: -540px;}
+    
+        100%{margin-left: -960px;}
+    }
+    
+    @keyframes move-rigth{
+        0% { margin-left: -960px;}
+        13%{ margin-left: -960px;}
+    
+        20%{margin-left: -540px;}
+        53%{margin-left: -540px;}
+        
+        60%{margin-left: -420px;}
+        93%{margin-left: -420px;}
+       
+        100%{margin-left: 0px;}
+    }
+    
+}
+
+

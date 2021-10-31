@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Pragmatica ExtraLight Reg';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pragmatica ExtraLight Reg'), url('../fonts/Pragmatica-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Futura Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura Book'), url('../fonts/FuturaBookfont.ttf') format('truetype');
+}
+
+:root{
+    --theme-color: white;
+    --primary-color: #7510F7;
+    --second-color: #32066B;
+    --text-color: white;
+    --text-color-inverse: black;
+    --shadow-color: #e5e5e5;
+    --muenu-background-mobile: #7510F7;
+}
+
+body{
+    font-family: 'Futura Book';
+    padding-top: 83px;
+    color: white;
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+a{
+    text-decoration: none;
+}
+
+.page-top{
+    width: 100%;
+    height: calc(100vh - 83px);
+}
+
+.page-bottom{
+    width: 100%;
+    height: calc(100vh - 35px);
+}
