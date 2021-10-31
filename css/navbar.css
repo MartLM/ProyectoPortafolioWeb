@@ -180,8 +180,6 @@
 .menu a:hover::after{
     opacity: 1;
     --clippy:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
-
 }
 
 @media (max-width: 1200px){

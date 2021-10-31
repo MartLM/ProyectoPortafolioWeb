@@ -51,11 +51,23 @@ a{
 }
 
 .page-top{
-    width: 100%;
-    height: calc(100vh - 83px);
-}
+        width: 100%;
+        height: calc(100vh - 83px);
+    }
 
 .page-bottom{
     width: 100%;
-    height: calc(100vh - 35px);
+    height: calc(100vh + 83px);
+}
+
+@media (max-width: 768px){
+    .page-top{
+    width: 100%;
+    height: calc(100vh - 54px);
+    }
+
+    .page-bottom{
+        width: 100%;
+        height: calc(100vh + 54px);
+    }
 }

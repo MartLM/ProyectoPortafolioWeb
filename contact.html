@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a class="name" href="./">Martin Laguna</a>
+            <div class="menu">
+                <ul class="list">
+                    <li><a class="ancla1 item" href="./" >HOME </a></li>
+                    <li><a class="ancla2 item" href="works.html" >WORKS</a></li>
+                    <li><a class="ancla3 item" href="skills.html" >SKILLS</a></li>
+                    <li><a class="ancla4 item  selected" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                    <a href="https://twitter.com" target="_blank" class="redes" aria-label="twitter">
+                        <i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="redes" aria-label="facebook">
+                        <i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="redes" aria-label="instagram">
+                        <i class="fab fa-instagram"></i></a>
+            </div>
+            <input type="checkbox" class="btn-collapse" id="nav-main_checkbox">
+            <label for="nav-main_checkbox" class="ham" aria-label="Abrir menú">
+                <span class="icon-nav primero"></span>
+                <span class="icon-nav medio"></span>
+                <span class="icon-nav ultimo"></span>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section class="contact">
+            <h1 class="contact-title">CONTACTO</h1>
+            <div class="div-contact">
+                <div class="contact-form">
+                    <form method="post">
+                        <p class="block">
+                            <label for="-fullname">Nombres</label>
+                            <input type="text" name="fullname" id="-fullname" required>
+                        </p>
+                        <p class="block">
+                            <label for="-email">E-mail</label>
+                            <input type="email" name="email" id="-email" required>
+                        </p>
+                        <p>
+                            <label for="-message">Mensaje</label>
+                            <textarea name="message" id="-message" rows="5"></textarea>
+                        </p>
+                        <p>
+                            <button type="submit" name="submit">ENVIAR</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>MÁS INFO</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i><a href="https://goo.gl/maps/5ze4Qua8ECKyUZuf9" target="_blank"> Urb. José C Mariategui, Mz D-Lt 2</a></li>
+                        <li><i class="fas fa-phone-alt"></i> +51 939 246 836</li>
+                        <li><i class="fas fa-envelope-open-text"></i><a href="mailto:lagunamorenoab@gmail.com"> lagunamorenoab@gmail.com</a></li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.8586720332897!2d-77.07066397076271!3d-11.94437709947097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1daf0abf9f9%3A0x9779d47f0c1fbfa7!2sJose%20C%20Mariategui%2C%20Los%20Olivos%2015314!5e0!3m2!1ses-419!2spe!4v1635564104925!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+                    <div class="links-contact">
+                        <a href="https://twitter.com" target="_blank" class="redes" aria-label="twitter">
+                            <i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="redes" aria-label="facebook">
+                            <i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="redes" aria-label="instagram">
+                            <i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
